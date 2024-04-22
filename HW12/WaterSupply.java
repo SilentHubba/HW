@@ -37,12 +37,12 @@ public class WaterSupply {
 		for(int i = 1; i < n + 1; i++)
 		{
 			// Edges have {weight, potentially undiscovered node (the node that is not currently being visited)}
-			int[] edge = {nodes[i][2], i};
+			int[] edge = {nodes[0][i], i};
 			edgeHeap.add(edge);
 		}
 		
 		int finalCost = 0;
-		
+		// Loop through edges and add costs until all nodes have been found
 		while(visitedNodes < n + 1)
 		{
 			int[] currentEdge = edgeHeap.remove();
@@ -79,6 +79,11 @@ public class WaterSupply {
 		int wells2[] = {1, 1, 4, 10, 10};
 		int[][] pipes2 = {{1, 2, 1}, {1, 2, 2}, {1, 3, 2}, {3, 4, 5}, {5, 4, 4}};
 		cost = waterSupply.minCostToSupplyWater(5, wells2, pipes2);
+		System.out.println(cost);
+		
+		int wells3[] = {2};
+		int[][] pipes3 = {};
+		cost = waterSupply.minCostToSupplyWater(1, wells3, pipes3);
 		System.out.println(cost);
 	}
 }
