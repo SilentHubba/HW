@@ -1,0 +1,1 @@
+The method uses binary search to find the point at which the normal versions turn into bad versions. When the lower bound crosses the upper bound, the method returns the lower bound, since it's the first value of the bad versions. There are edge cases for if all of the versions are fine or bad. Time: O(logn) for binary search. Space: O(1).
