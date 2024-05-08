@@ -1,0 +1,1 @@
+Loops through all combinations of 2 numbers. Then, it uses binary search to attempt to find the third number that adds to 0. If it exists, then check if it's already in the solution array. If it's not in the solution array, it adds it. Then, it returns the solution array after loopthing through all pairs of 2.
