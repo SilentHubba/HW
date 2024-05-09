@@ -1,0 +1,1 @@
+Get the counts of each character. If a character appears 2+ times, then it will add a length of however many characters were there. However, if the number is odd, then it will not include that odd count and instead add the count - 1. Finally, at the end, if there was an odd count, add one to the length as the middle of the palindrome.
